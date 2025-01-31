@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Try2me</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="theme-color" content="#4302b2">
+	<link href="img/try2me/logo.jpeg" rel="icon">
+	<link href="css/swiper.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/plugin.min.css" rel="stylesheet">
+	<link href="css/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
+		rel="stylesheet">
+
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/darkmode.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<style>
+		.slide-bg-image {
+			position: relative;
+			background-size: cover;
+			background-position: center;
+			height: 100vh;
+			/* Adjust height as needed */
+		}
+
+		.gradient-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+			/* Dark gradient overlay */
+			z-index: 1;
+			/* Make sure the gradient is on top of the background image */
+		}
+
+		.slide-inner .container {
+			position: relative;
+			z-index: 2;
+			/* Ensure content is on top of the gradient */
+		}
+
+		.text-white {
+			color: #ffffff;
+		}
+
+		.slide-title h3,
+		.slide-text p {
+			color: white;
+			z-index: 2;
+		}
+
+		.dsk-logo {
+			width: 160px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!--<div class="onloadpage" id="page_loader">
+		<div class="pre-content">
+			<div class="logo-pre"><img src="images/logo.png" alt="Logo" class="img-fluid" /></div>
+			<div class="pre-text- text-radius text-light text-animation bg-b">Niwax - Creative Agency & Portfolio HTML
+				Template Are 2 Seconds Away. Have Patience</div>
+		</div>
+	</div>-->
+
+
+	<header class="header-pr nav-bg-b main-header navfix fixed-top menu-white">
+		<div class="container-fluid m-pad">
+			<div class="menu-header">
+				<div class="dsk-logo"><a class="nav-brand" href="index.html">
+						<img src="img/try2me/logo.jpeg" alt="Logo" class="mega-white-logo" />
+						<img src="img/try2me/logo.jpeg" alt="Logo" class="mega-darks-logo" />
+					</a>
+				</div>
+				<div class="custom-nav" role="navigation">
+					<ul class="nav-list">
+						<li>
+							<a href="index.html" class="menu-links">Home</a>
+
+						</li>
+						<li>
+							<a href="about-us.html" class="menu-links">About Us</a>
+						</li>
+
+						<li>
+							<a href="service.html" class="menu-links">Services</a>
+						</li>
+						<!-- <li>
+							<a href="our-clients.html" class="menu-links">Our Clients</a>
+						</li> -->
+						<li>
+							<a href="contact-us.html" class="menu-links">Contact Us</a>
+						</li>
+
+					</ul>
+
+					<ul class="nav-list right-end-btn">
+						<li class="hidemobile"><a data-bs-toggle="offcanvas" href="#offcanvasExample"
+								class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
+						<li class="hidemobile"><a href="contact-us.html" class="btn-br bg-btn3 btshad-b2 lnk">Request A
+								Quote <span class="circle"></span></a> </li>
+
+						<li class="hidedesktop"><a data-bs-toggle="offcanvas" href="#offcanvasExample"
+								class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
+						<li class="navm- hidedesktop"> <a class="toggle" href="#"><span></span></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<nav id="main-nav">
+				<ul class="first-nav">
+					<li>
+						<a href="index.html">Home</a>
+
+					</li>
+					<li>
+						<a href="about-us.html">About Us</a>
+					</li>
+
+					<!-- <li>
+						<a href="products.html">Products</a>
+					</li> -->
+
+					<li>
+						<a href="service.html" class="menu-links">Services</a>
+					</li>
+
+					<!-- <li>
+						<a href="our-clients.html" class="menu-links">Our Clients</a>
+					</li> -->
+					<li>
+						<a href="contact-us.html" class="menu-links">Contact Us</a>
+					</li>
+
+
+
+				</ul>
+
+			</nav>
+		</div>
+	</header>
+
+
+	<div class="niwaxofcanvas offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample">
+		<div class="offcanvas-body">
+			<div class="cbtn animation">
+				<div class="btnclose"> <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+						aria-label="Close"></button></div>
+			</div>
+
+			<div class="getintouchblock mt30">
+				<h4>Get In Touch</h4>
+
+				<div class="media mt15">
+					<div class="icondive"><img src="images/icons/call.svg" alt="icon"></div>
+					<div class="media-body getintouchinfo">
+						<a href="tel:+918778792896">+91 8778792896 <span>Mobile</span></a>
+					</div>
+				</div>
+				<div class="media mt15">
+					<div class="icondive"><img src="images/icons/whatsapp.svg" alt="icon"></div>
+					<div class="media-body getintouchinfo">
+						<a href="https://wa.me/+918808807014" target="_blank">+91 8808807014 <span>Whatsapp</span></a>
+					</div>
+				</div>
+				<div class="media mt15">
+					<div class="icondive"><img src="images/icons/mail.svg" alt="icon"></div>
+					<div class="media-body getintouchinfo">
+						<a href="mailto:info@pojotechnology.com" target="_blank">Vcsprema@try2menet.com
+							<span>Online Support</span></a>
+					</div>
+				</div>
+				<div class="media mt15">
+					<div class="icondive"><img src="images/icons/map.svg" alt="icon"></div>
+					<div class="media-body getintouchinfo">
+						<a href="#">No.9/125,KK nagar,VOC 2nd street,Mannivakkam.Chennai-600048.<span>Visit Our
+								Office</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="contact-data mt30">
+				<h4>Follow Us On:</h4>
+				<div class="social-media-linkz mt10">
+					<a href="https://www.facebook.com/careercounsellorkerala?mibextid=ZbWKwL
+					" target="blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://g.page/r/Ce8Cs2xacesZEBE/review"><img src="./img/download/google.png" width="18px"
+							alt=""></a>
+					<a href="https://whatsapp.com/channel/0029VaAp5558qIzkROqAVj3R" target="blank"><img
+							src="./img/download/whatsapp.png" width="18px" alt=""></a>
+					<a href=" https://instagram.com/mycareercounsellor?igshid=OGQ5ZDc2ODk2ZA==" target="blank"><i
+							class="fab fa-instagram"></i></a>
+					<!-- <a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a> -->
+					<a href="https://youtube.com/@mycareercounsellor?si=deOSl3bAqhPsV4ph" target="blank"><i
+							class="fab fa-youtube"></i></a>
+					<!-- <a href="javascript:void(0)" target="blank"><i class="fab fa-pinterest-p"></i></a> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="hero-slider hero-style">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="slide-inner slide-bg-image background-image"
+						data-background="./img/try2me/slider2.jpg">
+						<div class="gradient-overlay"></div> <!-- Gradient overlay -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<div data-swiper-parallax="300" class="slide-title">
+										<h3 class="text-white">Say Goodbye to Limescale & Grime</h3>
+									</div>
+									<div data-swiper-parallax="400" class="slide-text">
+										<p>Introducing Try2me, the latest innovation by VCS Prema Enterprises! Our powerful descaling powder removes stubborn limescale, ensuring a fresh and hygienic washing machine.</p>
+									</div>
+
+									<div class="clearfix"></div>
+									<div data-swiper-parallax="500" class="slide-btns">
+										<a href="contact-us.html" class="btn-main bg-btn lnk">Enquiry Now <i
+												class="fas fa-chevron-right fa-icon"></i><span
+												class="circle"></span></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<!-- <img src="images/hero/web-development.png"> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="slide-inner slide-bg-image background-img" data-background="./img/try2me/slider1.jpg">
+						<div class="gradient-overlay"></div> <!-- Gradient overlay -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<div data-swiper-parallax="300" class="slide-title">
+										<h3 class="text-white">Easy to Use, Powerful Cleaning</h3>
+									</div>
+									<div data-swiper-parallax="400" class="slide-text">
+										<p>Just a scoop of Try2me in your next wash cycle, and watch it dissolve limescale effortlessly. No complicated steps—just add and let it work!</p>
+									</div>
+
+									<div class="clearfix"></div>
+									<div data-swiper-parallax="500" class="slide-btns">
+										<a href="contact-us.html" class="btn-main bg-btn lnk">Enquiry Now <i
+												class="fas fa-chevron-right fa-icon"></i><span
+												class="circle"></span></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<!-- <img src="images/hero/digital-marketing.png"> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="swiper-slide">
+					<div class="slide-inner slide-bg-image background-img" data-background="./img/try2me/slider3.jpg">
+						<div class="gradient-overlay"></div> <!-- Gradient overlay -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<div data-swiper-parallax="300" class="slide-title">
+										<h3 class="text-white">Keeps Your Machine & Clothes Fresh</h3>
+									</div>
+									<div data-swiper-parallax="400" class="slide-text">
+										<p>Try2me not only cleans your machine but also enhances its efficiency, giving you cleaner clothes and a longer-lasting appliance.</p>
+									</div>
+
+									<div class="clearfix"></div>
+									<div data-swiper-parallax="500" class="slide-btns">
+										<a href="contact-us.html" class="btn-main bg-btn lnk">Enquiry Now <i
+												class="fas fa-chevron-right fa-icon"></i><span
+												class="circle"></span></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<!-- <img src="images/hero/digital-marketing.png"> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+
+		</div>
+	</section>
+
+
+	<section class="about-sec-app pad-tb pt60 dark-bg2">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="common-heading text-l">
+						<h2 class="mb30"><span class="text-second text-bold">About Try2Me</span></h2>
+						<p class="text-justify">At VCS Prema Enterprises, your trusted partner in we believe that a well-maintained washing machine leads to cleaner clothes and a healthier home. That’s why we created Try2me, a powerful yet easy-to-use descaling powder designed to keep your washing machine in top condition.</p>
+						<p class="text-justify">Limescale, detergent residue, and grime build up over time, reducing your machine’s efficiency and leaving behind unpleasant odors. Try2me effectively dissolves these stubborn deposits, ensuring every wash is as fresh and effective as the first.</p>
+						<p class="mt10 text-justify">Our product is safe for all types of washing machines and has been formulated with efficiency and convenience in mind. Whether you use a top-load, front-load, or semi-automatic machine, Try2me keeps it running smoothly, extending its lifespan and enhancing its performance.</p>
+						<p class="mt10  text-justify">We are committed to providing high-quality cleaning solutions that make household maintenance easier. With Try2me, you get a hassle-free solution to keep your machine fresh, hygienic, and long-lasting.</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="funfact">
+						<div class="row">
+
+							<div class="col-lg-6 col-md-6 col-sm-12 col-6">
+								<div class="funfct srcl2">
+									<img src="images/icons/startup.svg" alt="startup icon">
+									<span class="services-cuntr counter">6</span><span class="services-cuntr">+</span>
+									<p>Years of Innovation</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12 col-6">
+								<div class="funfct srcl3">
+									<img src="images/icons/team.svg" alt="team">
+									<span class="services-cuntr counter">50</span><span class="services-cuntr">+</span>
+									<p>Dedicated Team Members</p>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6 col-sm-12 col-6">
+								<div class="funfct srcl5">
+									<img src="images/icons/computers.svg" alt="projects">
+									<span class="services-cuntr counter">100</span><span class="services-cuntr">%</span>
+									<p>Products Delivered</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12 col-6">
+								<div class="funfct srcl1">
+									<img src="images/icons/deal.svg" alt="Satisfaction">
+									<span class="services-cuntr counter">100</span><span class="services-cuntr">%</span>
+									<p>Customer Satisfaction</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="service-section-app  dark-bg2 pb-5">
+
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="common-heading ptag">
+						<!-- <span>SOLUTIONS</span> -->
+						<h2>Personalized Washing Machine Care Solutions</h2>
+					</div>
+				</div>
+				<!-- <p class="mb30 text-center">Thanks to the creativity, our Web and
+					Mobile Apps security and stability, integrated solutions and quality
+					services, the Pojo Technology has turned into world's renowned
+					destination for innovation, perceptive and business management
+
+				</p> -->
+			</div>
+			<div class="row upset">
+				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.2s">
+					<div class="service-card-app hoshd">
+						<h4>Effective Descaling</h4>
+						<ul class="-service-list mt10">
+							<!-- <li> <a href="#">iPhone</a> </li>
+							<li> <a href="#">Android</a> </li>
+							<li> <a href="#">Cross Platform</a> </li> -->
+						</ul>
+						<div class="tec-icon mt30">
+							<img src="./img/try2me/img3.jpg" alt="">
+							<!-- <ul class="servc-icon-sldr">
+								<li><a href="#">
+										<div class="img-iconbb"><img src="images/icons/android.svg" alt="img"></div>
+									</a></li>
+								<li><a href="#">
+										<div class="img-iconbb"><img src="images/icons/apple.svg" alt="img"></div>
+									</a></li>
+								<li><a href="#">
+										<div class="img-iconbb"><img src="images/icons/tablet.svg" alt="img"></div>
+									</a></li>
+							</ul> -->
+						</div>
+						<p class="mt20 text-justify">Removes stubborn limescale and detergent buildup for a cleaner machine.
+
+						</p>
+						<!-- <a href="mobile-app-development.html" class="mt20 link-prbs">Read More <i
+								class="fas fa fa-arrow-circle-right"></i></a> -->
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.5s">
+					<div class="service-card-app hoshd">
+						<h4>Universal Compatibility</h4>
+						<ul class="-service-list mt10">
+							<!-- <li> <a href="#">Angular Js</a> </li>
+							<li> <a href="#">Node Js</a> </li>
+							<li> <a href="#">React Js</a> </li>
+							<li> <a href="#">WordPress</a></li> -->
+						</ul>
+						<div class="tec-icon mt30">
+							<ul class="servc-icon-sldr">
+								<img src="./img/try2me/img4.jpg" alt="">
+
+								<!-- <li><a href="#">
+										<div class="img-iconbb"><img src="images/icons/angular.png" alt="img"></div>
+									</a></li>
+								<li><a href="#">
+										<div class="img-iconbb"><img src="images/icons/node.png" alt="img"></div>
+									</a></li>
+								<li><a href="#">
+										<div class="img-iconbb"><img src="images/icons/react.png" alt="img"></div>
+									</a></li>
+								<li><a href="#">
+										<div class="img-iconbb"><img src="images/icons/wordpress.svg" alt="img"></div>
+									</a></li> -->
+							</ul>
+						</div>
+						<p class="mt20 text-justify">Safe for all washing machine types, ensuring long-lasting performance.
+						</p>
+						<!-- <a href="web-development.html" class="mt20 link-prbs">Read More <i
+								class="fas fa fa-arrow-circle-right"></i></a> -->
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.8s">
+					<div class="service-card-app hoshd">
+						<h4>Easy & Hassle-Free</h4>
+						<ul class="-service-list mt10">
+							<!-- <li> <a href="#">Magento</a> </li>
+							<li> <a href="#">Shopify</a> </li>
+							<li> <a href="#">Woo-commerce</a></li> -->
+						</ul>
+						<div class="tec-icon mt30">
+							<ul class="servc-icon-sldr">
+								<img src="./img/try2me/img5.jpg" alt="">
+
+								<!-- <li><a href="#">
+											<div class="img-iconbb"><img src="images/icons/magento.svg" alt="img"></div>
+										</a></li>
+									<li><a href="#">
+											<div class="img-iconbb"><img src="images/icons/shopify.svg" alt="img"></div>
+										</a></li>
+									<li><a href="#">
+											<div class="img-iconbb"><img src="images/icons/woocommerce.svg" alt="img"></div>
+										</a></li> -->
+							</ul>
+						</div>
+						<p class="mt20 text-justify">Just add Try2me to your wash cycle and let it do the work!</p>
+						<!-- <a href="hosting.html" class="mt20 link-prbs">Read More <i
+								class="fas fa fa-arrow-circle-right"></i></a> -->
+					</div>
+				</div>
+
+
+				<!-- <div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.8s">
+					<div class="service-card-app hoshd">
+						<h4>Corporate Training & Development</h4>
+						<ul class="-service-list mt10">
+						</ul>
+						<div class="tec-icon mt30">
+							<ul class="servc-icon-sldr">
+							<img src="./img/download/schedule-8744592_1280.webp" alt="">
+							</ul>
+						</div>
+						<p class="mt20 text-justify">Unlocking potential through comprehensive training programs that drive innovation, leadership, and business success.</p>
+						<a href="digital-marketing.html" class="mt20 link-prbs">Read More <i
+								class="fas fa fa-arrow-circle-right"></i></a>
+					</div>
+				</div> -->
+				<!-- <div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.8s">
+					<div class="service-card-app hoshd">
+						<h4>SEO Optimization</h4>
+						<ul class="-service-list mt10">
+							<li> <a href="#">Google Search Console</a> </li>
+
+						</ul>
+						<div class="tec-icon mt30">
+							<ul class="servc-icon-sldr">
+								<li><a href="#">
+										<div class="img-iconbb"><img src="images/icons/google.png" alt="Google"></div>
+									</a></li>
+
+							</ul>
+						</div>
+						<p class="mt20 text-justify">Get more website traffic, more customers, and more online
+							visibility with powerful SEO services.
+
+						</p>
+						<a href="seo.html" class="mt20 link-prbs">Read More <i
+								class="fas fa fa-arrow-circle-right"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.8s">
+					<div class="service-card-app hoshd">
+						<h4>Graphic Design</h4>
+						<ul class="-service-list mt10">
+							<li> <a href="#">Coreldraw</a> </li>
+							<li> <a href="#">Photoshop</a> </li>
+						</ul>
+						<div class="tec-icon mt30">
+							<ul class="servc-icon-sldr">
+								<li><a href="#">
+										<div class="img-iconbb"><img src="images/icons/coreldraw.png" alt="img"></div>
+									</a></li>
+								<li><a href="#">
+										<div class="img-iconbb"><img src="images/icons/photoshop.png" alt="img"></div>
+									</a></li>
+
+							</ul>
+						</div>
+						<p class="mt20 text-justify">If you're looking for a logo design firm for your brand, then
+							you've landed on the right page. </p>
+						<a href="graphic-design.html" class="mt20 link-prbs">Read More <i
+								class="fas fa fa-arrow-circle-right"></i></a>
+					</div> -->
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<section class="testinomial-section-app bg-none pad-tb">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="common-heading text-l">
+						<span>What Our Customers Say About Us</span>
+						<h2>Over 200+ Satisfied Users and Counting!</h2>
+					</div>
+					<!-- <div class="review-title-ref mt40">
+						<div class="cta-card mt40">
+							<a href="#" class="btn-outline lnk">Write a Reviews<span class="circle"></span></a>
+						</div>
+					</div>
+					<div class="row mt30">
+						<a href="#" target="blank" class="wow fadeIn col-lg-4 col-4" data-wow-delay=".2s"><img
+								src="images/about/reviews-icon-1.png" alt="review" class="img-fluid"></a>
+
+					</div> -->
+				</div>
+				<div class="col-lg-7">
+					<div class="pl50">
+						<div class="shape shape-a1"><img src="images/shape/shape-3.svg" alt="shape"></div>
+						<div class="testimonial-card-a tcd owl-carousel">
+							<div class="testimonial-card">
+								<div class="tt-text">
+									<p>"Try2me works like magic! My washing machine smells fresh, and there's no more limescale buildup. Super easy to use!".</p>
+								</div>
+								<div class="client-thumbs mt30">
+									<div class="media v-center upset">
+										<div class="user-image bdr-radius"><img
+												src="images/user-thumb/pojo-testimonial.png" alt="girl"
+												class="img-fluid rounded-circle" /></div>
+										<div class="media-body user-info v-center">
+											<h5> – Priya S.</h5>
+
+											<i class="fas fa-quote-right posiqut"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial-card">
+								<div class="tt-text">
+									<p>"I’ve noticed a huge difference in my machine’s performance after using Try2me. Clothes come out cleaner, and the drum looks brand new!" .
+									</p>
+								</div>
+								<div class="client-thumbs mt30">
+									<div class="media v-center upset">
+										<div class="user-image bdr-radius"><img
+												src="images/user-thumb/pojo-testimonial.png" alt="girl"
+												class="img-fluid rounded-circle" /></div>
+										<div class="media-body user-info v-center">
+											<h5>– Rajesh K.</h5>
+
+											<i class="fas fa-quote-right posiqut"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial-card">
+								<div class="tt-text">
+									<p>"Highly recommend Try2me! It’s affordable, effective, and keeps my washing machine running smoothly without any hassle." .</p>
+								</div>
+								<div class="client-thumbs mt30">
+									<div class="media v-center upset">
+										<div class="user-image bdr-radius"><img
+												src="images/user-thumb/pojo-testimonial.png" alt="girl"
+												class="img-fluid rounded-circle" /></div>
+										<div class="media-body user-info v-center">
+											<h5>– Ananya M.</h5>
+
+											<i class="fas fa-quote-right posiqut"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer-row2">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-7 col-sm-6  ftr-brand-pp">
+						<a class="navbar-brand  f-dark-logo" href="#"> <img src="img/try2me/logo.jpeg" alt="Logo" /></a>
+						<a class="navbar-brand  f-white-logo" href="#"> <img src="img/try2me/logo.jpeg"
+								alt="Logo" /></a>
+						<p>Keep your washing machine in top condition with Try2me! Our powerful descaling powder ensures
+							deep cleaning, better hygiene, and long-lasting performance for your appliance. Experience
+							the difference with every wash!</p>
+						<p>Try2me – Because a clean machine means cleaner clothes!</p>
+					</div>
+					<!-- <div class="col-lg-4 col-sm-6">
+						<h5>Useful Links</h5>
+						<ul class="footer-address-list link-hover">
+							<li><a href="mobile-app-development.html">Mobile app Development</a></li>
+							<li><a href="web-development.html">Web Development</a></li>
+							<li><a href="seo.html">Search Engine Optimization</a></li>
+							<li><a href="digital-marketing.html">Digital Marketing</a></li>
+							<li><a href="hosting.html">Hosting Services</a></li>
+						</ul>
+					</div> -->
+					<div class="col-lg-5 col-sm-6">
+						<h5>Contact Us</h5>
+						<ul class="footer-address-list ftr-details">
+							<li>
+								<span><i class="fas fa-envelope"></i></span>
+								<p>Email <span> <a
+											href="mailto:Vcsprema@try2menet.com">Vcsprema@try2menet.com</a></span>
+								</p>
+							</li>
+							<li>
+								<span><i class="fas fa-phone-alt"></i></span>
+								<p>Phone <span> <a href="tel:+918778792896">
+											+91 8778792896</a></span></p>
+							</li>
+							<div class="d-flex">
+								<!-- <li>
+									<span><i class="fas fa-map-marker-alt"></i></span>
+									<p>Registered Office <span> Maliyakkal, Princy Villa
+											Chekom ,Pathanapuram
+											Kollam , Kerala-689695 </span></p>
+								</li> -->
+								<li>
+									<span><i class="fas fa-map-marker-alt"></i></span>
+									<p>Corporate Office <span> No.9/125,KK nagar,VOC 2nd
+											street,Mannivakkam.Chennai-600048.</span></p>
+								</li>
+							</div>
+						</ul>
+					</div>
+
+					<p class=" border-bottom pb-2 text-justify pt-3  border-2">© 2025 All Design & Developed By <b
+							class="text-primary"><a href="https://pojotechnology.com/" target="_blank">Pojo
+								Technology</a></b></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- <div class="footer-row3">
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="footer-social-media-icons">
+							<a href="https://www.facebook.com/careercounsellorkerala?mibextid=ZbWKwL
+					" target="blank"><i class="fab fa-facebook"></i></a>
+				
+					<a href=" https://instagram.com/mycareercounsellor?igshid=OGQ5ZDc2ODk2ZA==" target="blank"><i
+							class="fab fa-instagram"></i></a>
+					<a href="https://youtube.com/@mycareercounsellor?si=deOSl3bAqhPsV4ph" target="blank"><i
+							class="fab fa-youtube"></i></a>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+
+	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/plugin.min.js"></script>
+	<script src="js/preloader.js"></script>
+	<script src="js/dark-mode.js"></script>
+	<script src="js/swiper.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
