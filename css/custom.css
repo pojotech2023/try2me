@@ -42,3 +42,21 @@
     background-color: #128c7e;
     /* Darker green on hover */
   }
+
+  /* Center and style the H1 */
+  .appliances-heading{
+    margin-top: 80px;
+  }
+  .appliances-heading h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #fe0a02; 
+}
+@media only screen and (max-width:991px) {
+  .main-header.sticky {
+    height: 100px !important;
+}
+
+}
