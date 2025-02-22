@@ -18,6 +18,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
 		rel="stylesheet">
+		<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
@@ -26,10 +27,11 @@
 	<style>
 		.slide-bg-image {
 			position: relative;
-			background-size: cover;
+			background-size: contain !important;
 			background-position: center;
+			background-repeat: no-repeat;
 			height: 100vh;
-			/* Adjust height as needed */
+			width: 100%;
 		}
 
 		.gradient-overlay {
@@ -38,16 +40,13 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-			/* Dark gradient overlay */
+			background: linear-gradient(rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0.676));
 			z-index: 1;
-			/* Make sure the gradient is on top of the background image */
 		}
 
 		.slide-inner .container {
 			position: relative;
 			z-index: 2;
-			/* Ensure content is on top of the gradient */
 		}
 
 		.text-white {
@@ -61,7 +60,7 @@
 		}
 
 		.dsk-logo {
-			width: 380px;
+			width: 435px;
 		}
 	</style>
 </head>
@@ -89,7 +88,8 @@
 							</a>
 						</div>
 						<div class="col-6 d-flex align-items-center justify-content-center text-center">
-							<h5>DITCH THE CHORE DELIGHT IN CLEAN</h5>
+							<!-- <h5 class="slogan">DITCH THE CHORE DELIGHT IN CLEAN</h5> -->
+							<img src="img/try2me/slogan.jpg" alt="" class="img-fluid">
 						</div>
 					</div>
 				</div>
@@ -106,7 +106,7 @@
 						<li>
 							<a href="service.html" class="menu-links">Services</a>
 						</li>
-						
+
 						<li>
 							<a href="contact-us.html" class="menu-links">Contact Us</a>
 						</li>
@@ -200,15 +200,15 @@
 	</div>
 
 	<!-- H1 Tag for APPLIANCES DESCALING POWDER -->
-		<div class="container appliances-heading">
-			<div class="row">
-				<div class="col-12">
-						<h1 class="text-uppercase">Appliances
-							Descaling Powder</h1>
-				</div>
+	<div class="container appliances-heading">
+		<div class="row">
+			<div class="col-12">
+				<h1 class="text-uppercase">Appliance
+					Descaling Powder</h1>
 			</div>
 		</div>
-	
+	</div>
+
 	<section class="hero-slider hero-style">
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
@@ -274,7 +274,7 @@
 				</div>
 
 				<div class="swiper-slide">
-					<div class="slide-inner slide-bg-image background-img" data-background="./img/try2me/slider31.png">
+					<div class="slide-inner slide-bg-image background-img" data-background="./img/try2me/slider--3.png">
 						<div class="gradient-overlay"></div> <!-- Gradient overlay -->
 						<div class="container">
 							<div class="row">
@@ -594,7 +594,7 @@
 							<div class="testimonial-card">
 								<div class="tt-text">
 									<p>"I’ve noticed a huge difference in my machine’s performance after using Try2me.
-										Clothes come out cleaner, and the drum looks brand new!" 
+										Clothes come out cleaner, and the drum looks brand new!"
 									</p>
 								</div>
 								<div class="client-thumbs mt30">
@@ -630,7 +630,8 @@
 							</div>
 							<div class="testimonial-card">
 								<div class="tt-text">
-									<p>"This product truly lives up to its promise. My washing machine runs smoothly now." </p>
+									<p>"This product truly lives up to its promise. My washing machine runs smoothly
+										now." </p>
 								</div>
 								<div class="client-thumbs mt30">
 									<div class="media v-center upset">
@@ -681,7 +682,8 @@
 							</div>
 							<div class="testimonial-card">
 								<div class="tt-text">
-									<p>"Easy to use and very effective. My clothes come out fresher and cleaner now."</p>
+									<p>"Easy to use and very effective. My clothes come out fresher and cleaner now."
+									</p>
 								</div>
 								<div class="client-thumbs mt30">
 									<div class="media v-center upset">
@@ -698,7 +700,8 @@
 							</div>
 							<div class="testimonial-card">
 								<div class="tt-text">
-									<p>"I was skeptical at first, but it really works! No more limescale buildup. Highly recommended."</p>
+									<p>"I was skeptical at first, but it really works! No more limescale buildup. Highly
+										recommended."</p>
 								</div>
 								<div class="client-thumbs mt30">
 									<div class="media v-center upset">
@@ -715,7 +718,8 @@
 							</div>
 							<div class="testimonial-card">
 								<div class="tt-text">
-									<p>"I've tried many products, but Try2me stands out for its effectiveness and simplicity."</p>
+									<p>"I've tried many products, but Try2me stands out for its effectiveness and
+										simplicity."</p>
 								</div>
 								<div class="client-thumbs mt30">
 									<div class="media v-center upset">
@@ -848,6 +852,8 @@
 		<script src="js/swiper.min.js"></script>
 
 		<script src="js/main.js"></script>
+		<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
 
 
 </body>
